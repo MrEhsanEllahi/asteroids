@@ -19,6 +19,7 @@ def main():
             if event.type == pygame.QUIT:
                 return
         dt = Clock.tick(60) / 1000 #time passed since last frame in seconds
+        player.update(dt)
 
 if __name__ == "__main__": #if this file is being run directly
     main()
